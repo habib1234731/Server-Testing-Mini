@@ -49,6 +49,27 @@ describe('Battlefield', () => {
           expect(response.status).to.equal(200);
           return done();
         });
+
+      // check if its an array
+    });
+
+    it('should return an array', done => {
+      chai
+        .request(server)
+        .get('/api/battlefield')
+        .end((error, response) => {
+          if (error) {
+            console.log(error);
+            return done();
+          }
+          console.log(response);
+          console.log(response.body);
+
+          expect(response.body).to.equal('username');
+
+          //   expect(response.body).to.be.equal(this.newBattlefield);
+          return done();
+        });
     });
   });
 });

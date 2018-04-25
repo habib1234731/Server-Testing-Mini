@@ -14,7 +14,7 @@ server
                 if (error) {
                     res.status(500).json('Error finding the battlefield user');
                 }
-                res.json(username);
+                res.json('username');
             })
     })
 
