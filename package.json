@@ -5,6 +5,9 @@
   "repository": "https://github.com/habib1234731/Server-Testing-Mini.git",
   "author": "habib1234731 <habibrehman1234731@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "test": "mocha *.test.js"
+  },
   "dependencies": {
     "body-parser": "^1.18.2",
     "chai": "^4.1.2",
