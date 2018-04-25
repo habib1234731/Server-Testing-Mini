@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 const server = require('./server.js');
 const port = 5550;
 
-mongoose.connect('mongodb://localhost/testingMini',{}, ( error ) => {
+mongoose.connect('mongodb://localhost/battlefield',{}, ( error ) => {
     if (error) {
         return console.log(error);
     }
